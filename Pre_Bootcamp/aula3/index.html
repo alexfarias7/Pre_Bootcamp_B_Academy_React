@@ -7,10 +7,11 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div data-js="app" id="app"></div>
+    <div data-js="app">
+
 
     <form data-js="form">
-      <label for="username" >nome</label>
+      <label for="username" name="username"  id="username">nome</label>
       <input type="text"  data-js="name">
       <br>
       <label for="email">email</label>
@@ -40,13 +41,15 @@
         JAVA
       </label>
       <br>
-      <select name="lang"  multiple data-js="select">
+      <select name="select"  multiple data-js="select">
         <option value="js">js</option>
         <option value="ts">ts</option>
-        <option value="java">java</option>
-      </select>c
-      <button type="submit" data-js="button">envair</button>
+        <option value="java">javascipt</option>
+      </select>
+      <button type="submit" data-js="button">enviar</button>
     </form>
+  </div>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
